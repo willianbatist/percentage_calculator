@@ -1,47 +1,36 @@
 .home-container {
     width: 100%;
     display: flex;
-    z-index: 100;
-    overflow: auto;
     min-height: 100vh;
     align-items: center;
-    border-color: var(--dl-color-gray-black);
-    border-width: 1px;
     flex-direction: column;
     justify-content: center;
     background-color: #37323E;
   }
   .home-containercalculadora {
-    width: 548px;
-    height: 773px;
-    display: flex;
-    align-items: flex-start;
+    width: 400px;
+    height: 600px;
+    display: block;
     border-color: orange;
     border-style: solid;
     border-width: 4px;
-    border-radius: var(--dl-radius-radius-radius8);
-    flex-direction: column;
-    justify-content: flex-end;
+    border-radius: 10px;
   }
   .home-container1 {
-    top: 50px;
-    flex: 0 0 auto;
-    left: 0px;
-    right: 0px;
-    width: 456px;
+    margin-top: 30px;
+    margin-left: 25px;
+    width: 350px;
     height: 175px;
-    margin: auto;
-    display: flex;
-    align-items: center;
+    display: block;
     border-color: orange;
     border-style: solid;
     border-width: 2px;
-    justify-content: center;
     background-color: #37323E;
   }
   .home-textinput {
-    left: 0px;
-    width: 450px;
+    margin-left: 2px;
+    width: 340px;
+    margin-top: 25px;
     bottom: 1px;
     height: 87px;
     background-color: #37323E;
@@ -50,30 +39,24 @@
     top: 14px;
     color: var(--dl-color-gray-white);
     right: 11px;
-    width: auto;
     font-size: 50px;
     font-style: normal;
     font-weight: 500;
   }
   .home-container2 {
-    top: 253px;
-    left: 0px;
-    right: 0px;
-    width: 454px;
-    height: 301px;
-    margin: auto;
+    margin-top: 50px;
+    margin-left: 25px;
+    width: 350px;
+    height: 150px;
+    margin-bottom: 150px;
+    border-width: 1px;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    border-color: orange;
-    border-width: 1px;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
   }
   .home-button {
     width: 100px;
     height: 50px;
-    display: flex;
   }
   .home-button1 {
     width: 100px;
@@ -91,14 +74,22 @@
     width: 100px;
     height: 50px;
   }
+  .input {
+    width: 92px;
+    height: 43px;
+  }
+  .buttons5-6 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -100px;
+    margin-left: 25px;
+  }
   .home-button5 {
-    left: 44px;
     width: 150px;
-    bottom: 109px;
+    height: 30px;
   }
   .home-button6 {
-    right: 44px;
     width: 150px;
-    bottom: 109px;
+    margin-right: 25px;
   }
   
