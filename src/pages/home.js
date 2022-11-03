@@ -7,7 +7,7 @@ const Home = (props) => {
     <div className="home-container">
       <div className="home-containercalculadora">
         <div className="home-container1">
-        <p className="home-text">1548</p>
+        <p className="home-text">1111</p>
           <input
             type="number"
             placeholder="VALOR"
@@ -20,7 +20,7 @@ const Home = (props) => {
           <button className="home-button2 btn-act">20%</button>
           <button className="home-button3 btn-act">30%</button>
           <button className="home-button4 btn-act">40%</button>
-          <input type="number" placeholder="%" className="input" />
+          <input type="number" placeholder="  %" className="input" />
         </div>
         <div className="buttons5-6">
           <button className="home-button5 btn2-act">Aumentar</button>

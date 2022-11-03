@@ -65,11 +65,13 @@ button {
   }
   .home-button5 {
     font-size: 14px;
+    font-weight: bold;
     width: 150px;
     height: 30px;
   }
   .home-button6 {
     font-size: 14px;
+    font-weight: bold;
     width: 150px;
     margin-right: 25px;
   }
