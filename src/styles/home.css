@@ -10,14 +10,14 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 .home-container {
-    backdrop-filter: blur(2px);
+    background-image: url('../../public/testes.png');
     width: 100%;
+    opacity: .3;
     display: flex;
     min-height: 100vh;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: #6D6A75;
   }
   .home-containercalculadora {
     background-color: #37323E;
