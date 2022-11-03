@@ -1,0 +1,75 @@
+button {
+    border:none;
+    text-decoration: none;
+    background-color: #37323E;
+    box-shadow: 2px 2px 1px 1px;
+    border: orange solid 2px;
+  }
+  .home-button {
+    border-radius: 50px;
+    background-color: #37323E;
+    font-size: 18px;
+    width: 100px;
+    height: 50px;
+  }
+  .btn-act:hover {
+    background-color: orange;
+    box-shadow: 2px 2px 1px 1px;
+  }
+  .btn-act:active{
+    position: relative;
+    top:5px;
+    background-color: orange;
+    box-shadow: none;
+  }
+  .home-button1 {
+    border-radius: 50px;
+    border: orange solid 2px;
+    font-size: 18px;
+    width: 100px;
+    height: 50px;
+  }
+  .home-button2 {
+    border-radius: 50px;
+    font-size: 18px;
+    width: 100px;
+    height: 50px;
+  }
+  .home-button3 {
+    border-radius: 50px;
+    font-size: 18px;
+    width: 100px;
+    height: 50px;
+  }
+  .home-button4 {
+    border-radius: 50px;
+    font-size: 18px;
+    width: 100px;
+    height: 50px;
+  }
+  .buttons5-6 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -100px;
+    margin-left: 25px;
+  }
+  .btn2-act:hover {
+    background-color: orange;
+    box-shadow: 2px 2px 1px 1px;
+  }
+  .btn2-act:active{
+    position: relative;
+    top:5px;
+    background-color: orange;
+    box-shadow: none;
+  }
+  .home-button5 {
+    font-size: 14px;
+    width: 150px;
+    height: 30px;
+  }
+  .home-button6 {
+    font-size: 14px;
+    width: 150px;
+    margin-right: 25px;
+  }

@@ -1,30 +1,30 @@
 import React from 'react'
-
 import '../styles/home.css'
+import '../styles/button.css'
 
 const Home = (props) => {
   return (
     <div className="home-container">
       <div className="home-containercalculadora">
         <div className="home-container1">
-        <span className="home-text">Text</span>
+        <p className="home-text">1548</p>
           <input
-            type="text"
+            type="number"
             placeholder="VALOR"
             className="home-textinput"
           />
         </div>
         <div className="home-container2">
-          <button className="home-button button">5%</button>
-          <button className="home-button1 button">10%</button>
-          <button className="home-button2 button">20%</button>
-          <button className="home-button3 button">30%</button>
-          <button className="home-button4 button">40%</button>
-          <input type="text" placeholder="placeholder" className="input" />
+          <button className="home-button btn-act">5%</button>
+          <button className="home-button1 btn-act">10%</button>
+          <button className="home-button2 btn-act">20%</button>
+          <button className="home-button3 btn-act">30%</button>
+          <button className="home-button4 btn-act">40%</button>
+          <input type="number" placeholder="%" className="input" />
         </div>
         <div className="buttons5-6">
-          <button className="home-button5 button">Aumentar</button>
-          <button button className="home-button6 button">Diminuir</button>
+          <button className="home-button5 btn2-act">Aumentar</button>
+          <button button className="home-button6 btn2-act">Diminuir</button>
         </div>
       </div>
     </div>

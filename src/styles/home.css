@@ -1,16 +1,30 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 .home-container {
+    backdrop-filter: blur(2px);
     width: 100%;
     display: flex;
     min-height: 100vh;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: #37323E;
+    background-color: #6D6A75;
   }
   .home-containercalculadora {
+    background-color: #37323E;
     width: 400px;
     height: 600px;
     display: block;
+    box-shadow: 10px 20px 40px 10px rgba(0, 0, 0, 0.5);
     border-color: orange;
     border-style: solid;
     border-width: 4px;
@@ -28,18 +42,24 @@
     background-color: #37323E;
   }
   .home-textinput {
+    border: none;
+    text-align: right;
+    font-size: 25px;
     margin-left: 2px;
-    width: 340px;
-    margin-top: 25px;
+    width: 330px;
+    margin-top: -10px;
     bottom: 1px;
-    height: 87px;
+    height: 60px;
     background-color: #37323E;
   }
+  .home-textinput:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+  }
   .home-text {
-    top: 14px;
-    color: var(--dl-color-gray-white);
-    right: 11px;
-    font-size: 50px;
+    margin-top: 25px;
+    margin-left: 250px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 500;
   }
@@ -54,42 +74,11 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .home-button {
-    width: 100px;
-    height: 50px;
-  }
-  .home-button1 {
-    width: 100px;
-    height: 50px;
-  }
-  .home-button2 {
-    width: 100px;
-    height: 50px;
-  }
-  .home-button3 {
-    width: 100px;
-    height: 50px;
-  }
-  .home-button4 {
-    width: 100px;
-    height: 50px;
-  }
   .input {
+    align-items: center;
+    font-size: 18px;
+    border: orange solid 2px;
     width: 92px;
     height: 43px;
-  }
-  .buttons5-6 {
-    display: flex;
-    justify-content: space-between;
-    margin-top: -100px;
-    margin-left: 25px;
-  }
-  .home-button5 {
-    width: 150px;
-    height: 30px;
-  }
-  .home-button6 {
-    width: 150px;
-    margin-right: 25px;
   }
   
