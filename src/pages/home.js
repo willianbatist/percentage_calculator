@@ -6,7 +6,7 @@ const Home = (props) => {
   const [percentage, setPercentage] = useState(0);
   const [inputPercentage, setInputPercentage] = useState('');
   console.log(percentage, 'o estado percentage');
-  
+
   function changeButtonClass(e) {
     const removeSelect = document.getElementsByClassName("home-button");
     for (let i = 0; i < removeSelect.length; i += 1) {
@@ -18,13 +18,22 @@ const Home = (props) => {
     SelectEvento.classList.add('btn-act-t');
   }
 
-  const handlePercentageChange = (e) => {
-    setPercentage(e.target.value);
-    console.log(e.target.classList.value);
-    if (e.target.classList.value === 'home-button btn-act-t') {
-      e.target.classList.remove('btn-act-t');
+  function removeChangeButtonClass() {
+    const removeSelect = document.getElementsByClassName("home-button");
+    for (let i = 0; i < removeSelect.length; i += 1) {
+      removeSelect[i].classList.remove('btn-act-t');
+      removeSelect[i].classList.add('btn-act');
     }
-    changeButtonClass(e)
+  }
+
+  const handleButtonsEvents = (e) => {
+    setPercentage(e.target.value);
+    if (e.target.classList.value === 'home-button btn-act-t') {
+      removeChangeButtonClass()
+    }
+    else {
+      changeButtonClass(e)
+    }
   }
 
   const handleInputChange = (e) => {
@@ -45,12 +54,12 @@ const Home = (props) => {
           />
         </div>
         <div className="home-container2">
-          <button onClick={ (e) => handlePercentageChange(e) } className="home-button btn-act" value={ 5 }>5%</button>
-          <button onClick={ (e) => handlePercentageChange(e) } className="home-button btn-act" value={ 10 }>10%</button>
-          <button onClick={ (e) => handlePercentageChange(e) } className="home-button btn-act" value={ 20 }>20%</button>
-          <button onClick={ (e) => handlePercentageChange(e) } className="home-button btn-act" value={ 30 } >30%</button>
-          <button onClick={ (e) => handlePercentageChange(e) } className="home-button btn-act" value={ 40 }>40%</button>
-          <input  onChange={ (e) => handlePercentageChange(e) } type="number" placeholder="  %" className="input"/>
+          <button onClick={ (e) => handleButtonsEvents(e) } className="home-button btn-act" value={ 5 }>5%</button>
+          <button onClick={ (e) => handleButtonsEvents(e) } className="home-button btn-act" value={ 10 }>10%</button>
+          <button onClick={ (e) => handleButtonsEvents(e) } className="home-button btn-act" value={ 20 }>20%</button>
+          <button onClick={ (e) => handleButtonsEvents(e) } className="home-button btn-act" value={ 30 } >30%</button>
+          <button onClick={ (e) => handleButtonsEvents(e) } className="home-button btn-act" value={ 40 }>40%</button>
+          <input  onChange={ (e) => handleButtonsEvents(e) } type="number" placeholder="  %" className="input"/>
         </div>
         <div className="buttons5-6">
           <button className="home-button5 btn2-act">Aumentar</button>
