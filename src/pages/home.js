@@ -6,7 +6,7 @@ import '../styles/button.css';
 const Home = (props) => {
   const [percentage, setPercentage] = useState(0);
   const [inputPercentage, setInputPercentage] = useState('');
-  console.log(percentage, 'o estado percentage');
+  
 
   return (
     <div className="home-container">
