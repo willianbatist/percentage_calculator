@@ -35,9 +35,13 @@ const Home = (props) => {
       changeButtonClass(e)
     }
   }
-
   const handleInputChange = (e) => {
     setInputPercentage(e.target.value);
+  }
+
+  const handleInput = (e) => {
+    removeChangeButtonClass()
+    setPercentage(e.target.value);
   }
 
   return (
@@ -59,7 +63,7 @@ const Home = (props) => {
           <button type="button" onClick={ (e) => handleButtonsEvents(e) } className="home-button btn-act" value={ 20 }>20%</button>
           <button type="button" onClick={ (e) => handleButtonsEvents(e) } className="home-button btn-act" value={ 30 } >30%</button>
           <button type="button" onClick={ (e) => handleButtonsEvents(e) } className="home-button btn-act" value={ 40 }>40%</button>
-          <input  onChange={ (e) => handleButtonsEvents(e) } type="number" placeholder="  %" className="input"/>
+          <input onChange={ (e) => handleInput(e) } type="number" placeholder="     %" className="input"/>
         </div>
         <div className="buttons5-6">
           <button type="button" className="home-button5 btn2-act">Aumentar</button>
