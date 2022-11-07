@@ -8,11 +8,25 @@ const Home = (props) => {
   const [number, setNumber] = useState('');
   const [result, setResult] = useState(0);
 
+  console.log(typeof percentage);
+
+  function percentageCalculation(e, number, percentageValue) {
+    const value = e.target.value;
+    if (value === 'Aumentar') {
+      let sum = (number * percentageValue/100) + number;
+      setResult(sum);
+    }
+    if (value === 'Diminuir') {
+      let sum = number - (number * percentageValue/100);
+      setResult(sum);
+    }
+  }
+
   return (
     <div className="home-container">
       <div className="home-containercalculadora">
         <div className="home-container1">
-        <p className="home-text">1111</p>
+        <p className="home-text">{ result }</p>
           <input
             onChange={ (e) => handleInputChange(e, setNumber) }
             value={ number }
@@ -30,8 +44,8 @@ const Home = (props) => {
           <input onChange={ (e) => handleInput(e, setPercentage) } type="number" placeholder="     %" className="input"/>
         </div>
         <div className="buttons5-6">
-          <button type="button" className="home-button5 btn2-act" value="Aumentar">Aumentar</button>
-          <button type="button" className="home-button6 btn2-act" value="Diminuir">Diminuir</button>
+          <button onClick={ (e) => percentageCalculation(e, number, percentage) } type="button" className="home-button5 btn2-act" value="Aumentar">Aumentar</button>
+          <button onClick={ (e) => percentageCalculation(e, number, percentage) } type="button" className="home-button6 btn2-act" value="Diminuir">Diminuir</button>
         </div>
       </div>
     </div>
