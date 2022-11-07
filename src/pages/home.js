@@ -6,16 +6,25 @@ const Home = (props) => {
   const [percentage, setPercentage] = useState(0);
   const [inputPercentage, setInputPercentage] = useState('');
 
+
+  function changeButtonClass(e) {
+    const removeSelect = document.getElementsByClassName("home-button");
+    for (let i = 0; i < removeSelect.length; i += 1) {
+      removeSelect[i].classList.remove('btn-act-t');
+      removeSelect[i].classList.add('btn-act');
+    }
+    const SelectEvento = e.target;
+    SelectEvento.classList.remove('btn-act');
+    SelectEvento.classList.add('btn-act-t');
+  }
+
   const handlePercentageChange = (e) => {
     setPercentage(e.target.value);
+    changeButtonClass(e)
   }
 
   const handleInputChange = (e) => {
     setInputPercentage(e.target.value);
-  }
-
-  const teste = () => {
-
   }
 
   return (
