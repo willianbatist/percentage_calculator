@@ -13,11 +13,11 @@ const Home = (props) => {
   function percentageCalculation(e, number, percentageValue) {
     const value = e.target.value;
     if (value === 'Aumentar') {
-      let sum = (number * percentageValue/100) + number;
+      let sum = (Number(number) * Number(percentageValue)/100) + Number(number);
       setResult(sum);
     }
     if (value === 'Diminuir') {
-      let sum = number - (number * percentageValue/100);
+      let sum = Number(number) - (Number(number) * Number(percentageValue)/100);
       setResult(sum);
     }
   }
