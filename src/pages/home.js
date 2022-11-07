@@ -54,16 +54,16 @@ const Home = (props) => {
           />
         </div>
         <div className="home-container2">
-          <button onClick={ (e) => handleButtonsEvents(e) } className="home-button btn-act" value={ 5 }>5%</button>
-          <button onClick={ (e) => handleButtonsEvents(e) } className="home-button btn-act" value={ 10 }>10%</button>
-          <button onClick={ (e) => handleButtonsEvents(e) } className="home-button btn-act" value={ 20 }>20%</button>
-          <button onClick={ (e) => handleButtonsEvents(e) } className="home-button btn-act" value={ 30 } >30%</button>
-          <button onClick={ (e) => handleButtonsEvents(e) } className="home-button btn-act" value={ 40 }>40%</button>
+          <button type="button" onClick={ (e) => handleButtonsEvents(e) } className="home-button btn-act" value={ 5 }>5%</button>
+          <button type="button" onClick={ (e) => handleButtonsEvents(e) } className="home-button btn-act" value={ 10 }>10%</button>
+          <button type="button" onClick={ (e) => handleButtonsEvents(e) } className="home-button btn-act" value={ 20 }>20%</button>
+          <button type="button" onClick={ (e) => handleButtonsEvents(e) } className="home-button btn-act" value={ 30 } >30%</button>
+          <button type="button" onClick={ (e) => handleButtonsEvents(e) } className="home-button btn-act" value={ 40 }>40%</button>
           <input  onChange={ (e) => handleButtonsEvents(e) } type="number" placeholder="  %" className="input"/>
         </div>
         <div className="buttons5-6">
-          <button className="home-button5 btn2-act">Aumentar</button>
-          <button button className="home-button6 btn2-act">Diminuir</button>
+          <button type="button" className="home-button5 btn2-act">Aumentar</button>
+          <button type="button" className="home-button6 btn2-act">Diminuir</button>
         </div>
       </div>
     </div>
