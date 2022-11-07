@@ -5,7 +5,7 @@ import '../styles/button.css';
 
 const Home = (props) => {
   const [percentage, setPercentage] = useState(0);
-  const [inputPercentage, setInputPercentage] = useState('');
+  const [number, setNumber] = useState('');
   
 
   return (
@@ -14,8 +14,8 @@ const Home = (props) => {
         <div className="home-container1">
         <p className="home-text">1111</p>
           <input
-            onChange={ (e) => handleInputChange(e, setInputPercentage) }
-            value={ inputPercentage }
+            onChange={ (e) => handleInputChange(e, setNumber) }
+            value={ number }
             type="number"
             placeholder="VALOR"
             className="home-textinput"
