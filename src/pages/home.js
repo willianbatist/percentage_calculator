@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import { handleButtonsEvents, handleInputChange } from '../hooks/buttons';
+import { handleButtonsEvents, handleInputChange, handleInput } from '../hooks/buttons';
 import '../styles/home.css';
 import '../styles/button.css';
 
@@ -7,11 +7,6 @@ const Home = (props) => {
   const [percentage, setPercentage] = useState(0);
   const [inputPercentage, setInputPercentage] = useState('');
   console.log(percentage, 'o estado percentage');
-
-  const handleInput = (e) => {
-    removeChangeButtonClass()
-    setPercentage(e.target.value);
-  }
 
   return (
     <div className="home-container">
@@ -32,7 +27,7 @@ const Home = (props) => {
           <button type="button" onClick={ (e) => handleButtonsEvents(e, setPercentage) } className="home-button btn-act" value={ 20 }>20%</button>
           <button type="button" onClick={ (e) => handleButtonsEvents(e, setPercentage) } className="home-button btn-act" value={ 30 } >30%</button>
           <button type="button" onClick={ (e) => handleButtonsEvents(e, setPercentage) } className="home-button btn-act" value={ 40 }>40%</button>
-          <input onChange={ (e) => handleInput(e) } type="number" placeholder="     %" className="input"/>
+          <input onChange={ (e) => handleInput(e, setPercentage) } type="number" placeholder="     %" className="input"/>
         </div>
         <div className="buttons5-6">
           <button type="button" className="home-button5 btn2-act">Aumentar</button>

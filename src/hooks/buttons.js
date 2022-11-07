@@ -30,3 +30,8 @@ export const handleButtonsEvents = (e, setState) => {
 export const handleInputChange = (e, setState) => {
   setState(e.target.value);
 }
+
+export const handleInput = (e, setState) => {
+  removeChangeButtonClass()
+  setState(e.target.value);
+}
