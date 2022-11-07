@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import { handleButtonsEvents } from '../hooks/buttons';
+import { handleButtonsEvents, handleInputChange } from '../hooks/buttons';
 import '../styles/home.css';
 import '../styles/button.css';
 
@@ -7,10 +7,6 @@ const Home = (props) => {
   const [percentage, setPercentage] = useState(0);
   const [inputPercentage, setInputPercentage] = useState('');
   console.log(percentage, 'o estado percentage');
-
-  const handleInputChange = (e) => {
-    setInputPercentage(e.target.value);
-  }
 
   const handleInput = (e) => {
     removeChangeButtonClass()
@@ -23,7 +19,7 @@ const Home = (props) => {
         <div className="home-container1">
         <p className="home-text">1111</p>
           <input
-            onChange={ (e) => handleInputChange(e) }
+            onChange={ (e) => handleInputChange(e, setInputPercentage) }
             value={ inputPercentage }
             type="number"
             placeholder="VALOR"

@@ -26,3 +26,7 @@ export const handleButtonsEvents = (e, setState) => {
     changeButtonClass(e)
   }
 }
+
+export const handleInputChange = (e, setState) => {
+  setState(e.target.value);
+}
