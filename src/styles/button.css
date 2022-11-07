@@ -16,32 +16,37 @@ button {
     background-color: orange;
     box-shadow: 2px 2px 1px 1px;
   }
-  .btn-act:active{
+  .btn-act:active {
     position: relative;
     top:5px;
     background-color: orange;
     box-shadow: none;
   }
-  .home-button1 {
-    border-radius: 50px;
-    border: orange solid 2px;
-    font-size: 18px;
-    width: 100px;
-    height: 50px;
+  .btn-act-t {
+    position: relative;
+    top:5px;
+    background-color: orange;
+    box-shadow: none;
   }
-  .home-button2 {
-    border-radius: 50px;
-    font-size: 18px;
-    width: 100px;
-    height: 50px;
-  }
-  .home-button3 {
+  .home-button {
     border-radius: 50px;
     font-size: 18px;
     width: 100px;
     height: 50px;
   }
-  .home-button4 {
+  .home-button {
+    border-radius: 50px;
+    font-size: 18px;
+    width: 100px;
+    height: 50px;
+  }
+  .home-button {
+    border-radius: 50px;
+    font-size: 18px;
+    width: 100px;
+    height: 50px;
+  }
+  .home-button {
     border-radius: 50px;
     font-size: 18px;
     width: 100px;

@@ -14,6 +14,10 @@ const Home = (props) => {
     setInputPercentage(e.target.value);
   }
 
+  const teste = () => {
+
+  }
+
   return (
     <div className="home-container">
       <div className="home-containercalculadora">
@@ -29,10 +33,10 @@ const Home = (props) => {
         </div>
         <div className="home-container2">
           <button onClick={ (e) => handlePercentageChange(e) } className="home-button btn-act" value={ 5 }>5%</button>
-          <button onClick={ (e) => handlePercentageChange(e) } className="home-button1 btn-act" value={ 10 }>10%</button>
-          <button onClick={ (e) => handlePercentageChange(e) } className="home-button2 btn-act" value={ 20 }>20%</button>
-          <button onClick={ (e) => handlePercentageChange(e) } className="home-button3 btn-act" value={ 30 } >30%</button>
-          <button onClick={ (e) => handlePercentageChange(e) } className="home-button4 btn-act" value={ 40 }>40%</button>
+          <button onClick={ (e) => handlePercentageChange(e) } className="home-button btn-act" value={ 10 }>10%</button>
+          <button onClick={ (e) => handlePercentageChange(e) } className="home-button btn-act" value={ 20 }>20%</button>
+          <button onClick={ (e) => handlePercentageChange(e) } className="home-button btn-act" value={ 30 } >30%</button>
+          <button onClick={ (e) => handlePercentageChange(e) } className="home-button btn-act" value={ 40 }>40%</button>
           <input  onChange={ (e) => handlePercentageChange(e) } type="number" placeholder="  %" className="input"/>
         </div>
         <div className="buttons5-6">
