@@ -5,8 +5,8 @@ import '../styles/button.css'
 const Home = (props) => {
   const [percentage, setPercentage] = useState(0);
   const [inputPercentage, setInputPercentage] = useState('');
-
-
+  console.log(percentage, 'o estado percentage');
+  
   function changeButtonClass(e) {
     const removeSelect = document.getElementsByClassName("home-button");
     for (let i = 0; i < removeSelect.length; i += 1) {
@@ -20,6 +20,10 @@ const Home = (props) => {
 
   const handlePercentageChange = (e) => {
     setPercentage(e.target.value);
+    console.log(e.target.classList.value);
+    if (e.target.classList.value === 'home-button btn-act-t') {
+      e.target.classList.remove('btn-act-t');
+    }
     changeButtonClass(e)
   }
 
