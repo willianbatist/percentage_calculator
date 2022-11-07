@@ -9,3 +9,12 @@ export function changeButtonClass(event) {
     SelectEvento.classList.add('btn-act-t');
 }
 
+export const handleButtonsEvents = (e, setState) => {
+  setState(e.target.value);
+  if (e.target.classList.value === 'home-button btn-act-t') {
+    removeChangeButtonClass()
+  }
+  else {
+    changeButtonClass(e)
+  }
+}

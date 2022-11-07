@@ -16,15 +16,15 @@ const Home = (props) => {
     }
   }
 
-  const handleButtonsEvents = (e) => {
-    setPercentage(e.target.value);
-    if (e.target.classList.value === 'home-button btn-act-t') {
-      removeChangeButtonClass()
-    }
-    else {
-      changeButtonClass(e)
-    }
-  }
+  // const handleButtonsEvents = (e) => {
+  //   setPercentage(e.target.value);
+  //   if (e.target.classList.value === 'home-button btn-act-t') {
+  //     removeChangeButtonClass()
+  //   }
+  //   else {
+  //     changeButtonClass(e)
+  //   }
+  // }
   const handleInputChange = (e) => {
     setInputPercentage(e.target.value);
   }
