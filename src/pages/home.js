@@ -1,22 +1,12 @@
-import React, { useState} from 'react'
-import '../styles/home.css'
-import '../styles/button.css'
+import React, { useState} from 'react';
+import { changeButtonClass } from '../hooks/buttons';
+import '../styles/home.css';
+import '../styles/button.css';
 
 const Home = (props) => {
   const [percentage, setPercentage] = useState(0);
   const [inputPercentage, setInputPercentage] = useState('');
   console.log(percentage, 'o estado percentage');
-
-  function changeButtonClass(e) {
-    const removeSelect = document.getElementsByClassName("home-button");
-    for (let i = 0; i < removeSelect.length; i += 1) {
-      removeSelect[i].classList.remove('btn-act-t');
-      removeSelect[i].classList.add('btn-act');
-    }
-    const SelectEvento = e.target;
-    SelectEvento.classList.remove('btn-act');
-    SelectEvento.classList.add('btn-act-t');
-  }
 
   function removeChangeButtonClass() {
     const removeSelect = document.getElementsByClassName("home-button");
