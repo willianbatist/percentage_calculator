@@ -2,7 +2,8 @@ button {
     border:none;
     text-decoration: none;
     background-color: #37323E;
-    box-shadow: 2px 2px 1px 1px;
+    color: white;
+    box-shadow: 2px 2px 1px 1px black;
     border: orange solid 2px;
   }
   .home-button {
@@ -14,7 +15,7 @@ button {
   }
   .btn-act:hover {
     background-color: orange;
-    box-shadow: 2px 2px 1px 1px;
+    box-shadow: 2px 2px 1px 1px black;
   }
   .btn-act:active {
     position: relative;
@@ -60,7 +61,7 @@ button {
   }
   .btn2-act:hover {
     background-color: orange;
-    box-shadow: 2px 2px 1px 1px;
+    box-shadow: 2px 2px 1px 1px black;
   }
   .btn2-act:active{
     position: relative;
