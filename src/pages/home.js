@@ -8,8 +8,6 @@ const Home = (props) => {
   const [number, setNumber] = useState('');
   const [result, setResult] = useState(0);
 
-  console.log(typeof percentage);
-
   function percentageCalculation(e, number, percentageValue) {
     const value = e.target.value;
     if (value === 'Aumentar') {
