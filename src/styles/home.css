@@ -9,14 +9,15 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 .home-container {
-    background-image: url('../../public/matematica3.jpeg');
-    width: 100%;
-    display: flex;
-    min-height: 100vh;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
+  background: rgb(55,50,62);
+  background: linear-gradient(142deg, rgba(55,50,62,1) 29%, rgba(43,45,66,1) 58%, rgba(43,39,48,1) 100%);
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
   .home-containercalculadora {
     background-color: #37323E;
     width: 400px;
