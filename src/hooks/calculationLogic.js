@@ -1,3 +1,5 @@
+import { removeChangeButtonClass } from '../hooks/buttons';
+
 export function percentageCalculation(e, number, percentageValue, setState) {
   const value = e.target.value;
   if (value === 'Aumentar') {
@@ -8,4 +10,5 @@ export function percentageCalculation(e, number, percentageValue, setState) {
     let sum = Number(number) - (Number(number) * Number(percentageValue)/100);
     setState(sum);
   }
+  removeChangeButtonClass()
 }

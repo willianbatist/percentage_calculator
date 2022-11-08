@@ -18,7 +18,7 @@ const Home = (props) => {
               onChange={ (e) => handleInputChange(e, setNumber) }
               value={ number }
               type="number"
-              placeholder="VALOR"
+              placeholder="INSERIR VALOR"
               className="home-textinput"
             />
         </div>
