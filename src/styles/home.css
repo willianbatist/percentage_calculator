@@ -4,7 +4,9 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
+*{
+  color: white;
+}
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
@@ -34,18 +36,18 @@ input[type=number] {
     margin-left: 25px;
     width: 350px;
     height: 175px;
+    text-align: right;
     display: block;
     border-color: orange;
     border-style: solid;
     border-width: 2px;
-    background-color: #37323E;
+    background-color: #2b2730;
   }
   .home-textinput {
     border: none;
     text-align: right;
     text-decoration: black;
     font-size: 25px;
-    margin-left: 2px;
     width: 330px;
     margin-top: -10px;
     bottom: 1px;
@@ -57,8 +59,6 @@ input[type=number] {
     outline: 0;
   }
   .home-text {
-    margin-top: 25px;
-    margin-left: 250px;
     font-size: 40px;
     font-style: normal;
     font-weight: 500;
