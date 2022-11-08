@@ -44,19 +44,20 @@ input[type=number] {
     color: white;
     border: none;
     text-align: right;
+    margin-right: 10px;
     text-decoration: black;
     font-size: 25px;
     width: 330px;
-    margin-top: -10px;
-    bottom: 1px;
+    margin-top: -15px;
     height: 60px;
-    background-color: #37323E;
+    background-color: #2b2730;
   }
   .home-textinput:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
   }
   .home-text {
+    margin-right: 10px;
     color: white;
     font-size: 40px;
     font-style: normal;
