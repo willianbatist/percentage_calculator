@@ -13,14 +13,14 @@ const Home = (props) => {
     <div className="home-container">
       <div className="home-containercalculadora">
         <div className="home-container1">
-        <p className="home-text">{ result }</p>
-          <input
-            onChange={ (e) => handleInputChange(e, setNumber) }
-            value={ number }
-            type="number"
-            placeholder="VALOR"
-            className="home-textinput"
-          />
+          <p className="home-text">{ result }</p>
+            <input
+              onChange={ (e) => handleInputChange(e, setNumber) }
+              value={ number }
+              type="number"
+              placeholder="VALOR"
+              className="home-textinput"
+            />
         </div>
         <div className="home-container2">
           <button type="button" onClick={ (e) => handleButtonsEvents(e, setPercentage) } className="home-button btn-act" value={ 5 }>5%</button>
