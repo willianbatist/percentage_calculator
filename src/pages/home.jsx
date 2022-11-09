@@ -8,7 +8,7 @@ const Home = (props) => {
   const [percentage, setPercentage] = useState(0);
   const [number, setNumber] = useState('');
   const [result, setResult] = useState(0);
-  const [objResult, setObjResult] = useState({ status: 'Aumento de', sumResult: 250 });
+  const [objResult, setObjResult] = useState({ status: '', sumResult: '' });
 
   return (
     <div className="home-container">
