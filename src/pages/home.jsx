@@ -8,6 +8,7 @@ const Home = (props) => {
   const [percentage, setPercentage] = useState(0);
   const [number, setNumber] = useState('');
   const [result, setResult] = useState(0);
+  const [objResult, setObjResult] = useState({ status: 'Aumento de', sumResult: 250 });
 
   return (
     <div className="home-container">
@@ -15,7 +16,7 @@ const Home = (props) => {
         <p className="marca">Calc Porcentagem</p>
         <div className="home-container1">
           <div className="sum-result">
-            <p className="sum">Aumentou 250</p>
+            <p className="sum">{`${objResult.status} ${objResult.sumResult}`}</p>
             <p className="home-text">{ result }</p>
           </div>
             <input
@@ -35,8 +36,8 @@ const Home = (props) => {
           <input onChange={ (e) => handleInput(e, setPercentage) } type="number" placeholder="     %" className="input"/>
         </div>
         <div className="buttons5-6">
-          <button onClick={ (e) => percentageCalculation(e, number, percentage, setResult) } type="button" className="home-button5 btn2-act" value="Aumentar">Aumentar</button>
-          <button onClick={ (e) => percentageCalculation(e, number, percentage, setResult) } type="button" className="home-button6 btn2-act" value="Diminuir">Diminuir</button>
+          <button onClick={ (e) => percentageCalculation(e, number, percentage, setResult, setObjResult) } type="button" className="home-button5 btn2-act" value="Aumentar">Aumentar</button>
+          <button onClick={ (e) => percentageCalculation(e, number, percentage, setResult, setObjResult) } type="button" className="home-button6 btn2-act" value="Diminuir">Diminuir</button>
         </div>
       </div>
     </div>
