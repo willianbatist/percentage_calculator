@@ -8,17 +8,15 @@ const Home = (props) => {
   const [percentage, setPercentage] = useState(0);
   const [number, setNumber] = useState('');
   const [result, setResult] = useState(0);
-  const [objResult, setObjResult] = useState({ status: '', sumResult: '' });
+  const [objResult, setObjResult] = useState({ status: 'Bem Vindo!', sumResult: '' });
 
   return (
     <div className="home-container">
       <div className="home-containercalculadora">
         <p className="marca">Calc Porcentagem</p>
         <div className="home-container1">
-          <div className="sum-result">
             <p className="sum">{`${objResult.status} ${objResult.sumResult}`}</p>
             <p className="home-text">{ result }</p>
-          </div>
             <input
               onChange={ (e) => handleInputChange(e, setNumber) }
               value={ number }
