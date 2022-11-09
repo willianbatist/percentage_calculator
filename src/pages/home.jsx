@@ -31,7 +31,7 @@ const Home = (props) => {
           <button type="button" onClick={ (e) => handleButtonsEvents(e, setPercentage) } className="home-button btn-act" value={ 20 }>20%</button>
           <button type="button" onClick={ (e) => handleButtonsEvents(e, setPercentage) } className="home-button btn-act" value={ 30 } >30%</button>
           <button type="button" onClick={ (e) => handleButtonsEvents(e, setPercentage) } className="home-button btn-act" value={ 40 }>40%</button>
-          <input onChange={ (e) => handleInput(e, setPercentage) } type="number" placeholder="     %" className="input"/>
+          <input onChange={ (e) => handleInput(e, setPercentage) } type="number" placeholder="%" className="input"/>
         </div>
         <div className="buttons5-6">
           <button onClick={ (e) => percentageCalculation(e, number, percentage, setResult, setObjResult) } type="button" className="home-button5 btn2-act" value="Aumentar">Aumentar</button>
