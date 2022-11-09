@@ -9,7 +9,22 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+@media only screen and (max-width: 400px) {
+  .home-containercalculadora {
+    width: 100% !important;
+  }
+
+  .home-container1 {
+    width: 80%!important;
+  }
+
+  .home-container2 {
+    width: 85% !important;
+  }
+}
+
 .home-container {
+  width: 100%;
   background: rgb(55,50,62);
   background: linear-gradient(
     142deg, 
@@ -17,7 +32,6 @@ input[type=number] {
     rgba(43,45,66,1) 58%,
     rgba(43,39,48,1) 100%
   );
-  width: 100%;
   display: flex;
   min-height: 100vh;
   align-items: center;
@@ -59,14 +73,23 @@ input[type=number] {
     background-color: #2b2730;
   }
 
+  .home-text {
+    margin-right: 10px;
+    margin-top: 20px;
+    color: white;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
   .home-textinput {
     color: white;
     border: none;
     text-align: right;
-    margin-right: 10px;
+    margin-right: 3%;
     text-decoration: black;
     font-size: 20px;
-    width: 330px;
+    width: 80%;
     margin-top: -100px;
     height: 30px;
     background-color: #2b2730;
@@ -75,15 +98,6 @@ input[type=number] {
   .home-textinput:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
-  }
-
-  .home-text {
-    margin-right: 10px;
-    margin-top: 20px;
-    color: white;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
   }
 
   .home-container2 {
