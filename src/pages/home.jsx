@@ -12,6 +12,7 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <div className="home-containercalculadora">
+        <p className="marca">Calc Porcentagem</p>
         <div className="home-container1">
           <p className="home-text">{ result }</p>
             <input

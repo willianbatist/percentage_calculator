@@ -8,6 +8,13 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+.marca {
+  font-family: 'Poor Story', cursive;
+  margin-left: 15px;
+  color: white;
+  font-weight: bolder;
+  font-size: 25px;
+}
 .home-container {
   background: rgb(55,50,62);
   background: linear-gradient(142deg, rgba(55,50,62,1) 29%, rgba(43,45,66,1) 58%, rgba(43,39,48,1) 100%);
