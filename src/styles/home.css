@@ -23,6 +23,8 @@ input[type=number] {
   }
 }
 
+
+
 .home-container {
   width: 100%;
   background: rgb(55,50,62);
@@ -58,6 +60,11 @@ input[type=number] {
     color: white;
     font-weight: bolder;
     font-size: 25px;
+  }
+
+  .sum-result {
+    display: flex;
+    justify-content: space-between;
   }
 
   .home-container1 {

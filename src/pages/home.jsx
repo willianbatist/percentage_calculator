@@ -14,7 +14,10 @@ const Home = (props) => {
       <div className="home-containercalculadora">
         <p className="marca">Calc Porcentagem</p>
         <div className="home-container1">
-          <p className="home-text">{ result }</p>
+          <div className="sum-result">
+            <p className="sum">Aumentou 250</p>
+            <p className="home-text">{ result }</p>
+          </div>
             <input
               onChange={ (e) => handleInputChange(e, setNumber) }
               value={ number }
