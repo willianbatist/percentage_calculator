@@ -10,7 +10,7 @@ Este repositório contem o **Projeto Percentage Calculator** que reúne o aprend
 
 #### Habilidades que foram exigidas:
 
-  - Logica de programação.
+  - Logica de programação;
 
 #### Tecnologias utilizadas:
 
