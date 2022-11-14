@@ -5,7 +5,6 @@ Este repositório contem o **Projeto Percentage Calculator** que reúne o aprend
 
 # Projeto Percentage Calculator
 ### Resultado obtido:
-
 ### Deploy do Projeto: [Percentage Calculator](https://percentage-calculator-will.netlify.app/)
 ![](./public/calc.gif)
 
