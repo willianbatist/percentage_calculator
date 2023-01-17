@@ -11,7 +11,7 @@ Este repositório contem o **Projeto Percentage Calculator** que reúne o aprend
 
   - Logica de programação;
 
-#### Tecnologias utilizadas:
+#### Tecnologias 
 
   - React;
   - JavaScript;
