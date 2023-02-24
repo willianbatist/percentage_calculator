@@ -7,7 +7,7 @@ Este repositório contem o **Projeto Percentage Calculator** que reúne o aprend
 ### Deploy do Projeto: [Percentage Calculator](https://percentage-calculator-will.netlify.app/)
 ![](./public/calc.gif)
 
-####
+#### Habilidades que foram exigidas:
 
   - Logica de programação;
 
